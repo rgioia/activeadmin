@@ -18,6 +18,11 @@
   end
   %>
   
+
+  <% h = request.remote_ip %>
+  
+  <%= f.hidden_field :remoteip, value: h %>
+  
    <div class="g-recaptcha" data-sitekey="6LfDqhITAAAAAEZFbEVr1KNye0fvPpQFEWH_5Kd5"></div>
   
   <%= recaptcha_tags %>
