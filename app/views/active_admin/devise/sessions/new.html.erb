@@ -10,7 +10,6 @@
       }
       f.input :password, label: t('active_admin.devise.password.title')
       f.input :remember_me, label: t('active_admin.devise.login.remember_me'), as: :boolean if devise_mapping.rememberable?
-      f.recaptcha_tags
     end
     
 
@@ -20,6 +19,8 @@
     end
   end
   %>
+  
+  <%= recaptcha_tags %>
 
   <%= render partial: "active_admin/devise/shared/links" %>
 </div>
